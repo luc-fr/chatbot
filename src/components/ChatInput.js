@@ -32,11 +32,14 @@ const ChatInput = ({newChatMessages, setNewChatMessages}) => {
   return (
     <div>
       <input
+        placeholder='Send a message!'
         onChange={saveInputText}
         value={inputText}
-        placeholder='Send a message!'
       />
-      <button onClick={sendMessage}>Send</button>
+      <button
+        onClick={sendMessage}
+        className="bg-sky-500"
+      >Send</button>
     </div>
   );
 }
