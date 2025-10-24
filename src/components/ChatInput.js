@@ -32,13 +32,14 @@ const ChatInput = ({newChatMessages, setNewChatMessages}) => {
   return (
     <div>
       <input
-        placeholder='Send a message!'
+        placeholder='Send a message to Chatbot!'
         onChange={saveInputText}
         value={inputText}
+        className="m-3 p-2 rounded-lg"
       />
       <button
         onClick={sendMessage}
-        className="bg-sky-500"
+        className="text-white bg-emerald-500 rounded-lg text-xs p-3"
       >Send</button>
     </div>
   );
